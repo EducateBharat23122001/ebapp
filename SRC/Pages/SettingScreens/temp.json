@@ -1,0 +1,90 @@
+[
+    {
+        "__v": 0,
+        "_id": "673facd4fa82d06796b4f8be",
+        "createdAt": "2024-11-21T21:57:40.952Z",
+        "questionAnswer": "3",
+        "questionMarks": 4,
+        "questionName": "1",
+        "questionNegativeMarks": 1,
+        "questionOptions": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "questionPdf": "https://ebappbackendbucket.s3.ap-south-1.amazonaws.com/Document%2021%20%281%29.pdf",
+        "questionSubject": "physics",
+        "questionType": "MCQ",
+        "quizId": "673fac7bb61a6e46ff607a86",
+        "quizType": "subject",
+        "updatedAt": "2024-11-21T21:57:40.952Z",
+        "userAnswer": "3"
+    },
+    {
+        "__v": 0,
+        "_id": "673facddfa82d06796b4f8c2",
+        "createdAt": "2024-11-21T21:57:49.612Z",
+        "questionAnswer": "3",
+        "questionMarks": 4,
+        "questionName": "2",
+        "questionNegativeMarks": 1,
+        "questionOptions": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "questionPdf": "https://ebappbackendbucket.s3.ap-south-1.amazonaws.com/Document%2021%20%281%29.pdf",
+        "questionSubject": "physics",
+        "questionType": "MCQ",
+        "quizId": "673fac7bb61a6e46ff607a86",
+        "quizType": "subject",
+        "updatedAt": "2024-11-21T21:57:49.612Z",
+        "userAnswer": "2"
+    },
+    {
+        "__v": 0,
+        "_id": "673face1fa82d06796b4f8c6",
+        "createdAt": "2024-11-21T21:57:53.248Z",
+        "questionAnswer": "3",
+        "questionMarks": 4,
+        "questionName": "3",
+        "questionNegativeMarks": 1,
+        "questionOptions": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "questionPdf": "https://ebappbackendbucket.s3.ap-south-1.amazonaws.com/Document%2021%20%281%29.pdf",
+        "questionSubject": "physics",
+        "questionType": "MCQ",
+        "quizId": "673fac7bb61a6e46ff607a86",
+        "quizType": "subject",
+        "updatedAt": "2024-11-21T21:57:53.248Z",
+        "userAnswer": "3"
+    },
+    {
+        "__v": 0,
+        "_id": "673face9fa82d06796b4f8ca",
+        "createdAt": "2024-11-21T21:58:01.586Z",
+        "questionAnswer": "3",
+        "questionMarks": 4,
+        "questionName": "4",
+        "questionNegativeMarks": 1,
+        "questionOptions": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "questionPdf": "https://ebappbackendbucket.s3.ap-south-1.amazonaws.com/Document%2021%20%281%29.pdf",
+        "questionSubject": "physics",
+        "questionType": "Short Answer",
+        "quizId": "673fac7bb61a6e46ff607a86",
+        "quizType": "subject",
+        "updatedAt": "2024-11-21T21:58:01.586Z",
+        "userAnswer": "2"
+    }
+]

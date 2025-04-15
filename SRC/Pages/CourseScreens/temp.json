@@ -1,0 +1,46 @@
+{
+    "_id": {
+        "$oid": "64a2a5f035121ef02ed8a834"
+    },
+    "profilePic": "noimage",
+    "name": "Vishaal",
+    "email": "vy638979@gmail.com",
+    "phone": "8081867557",
+    "age": {
+        "$numberInt": "21"
+    },
+    "password": "$2b$08$keN4mp7UTw.7tZS8AfbGQOdSpmrupqQpBo2Ak8/iY3SMnyfJRUvhG",
+    "coursePurchased": [
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0N2JhNzU0NWRlZTBhYTY4MGFmYmQ4ZCIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.aSImFplbR08opL7ZIEDGWoGFXmUBEkiv1x1zv6OTw50",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0N2JhNzU0NWRlZTBhYTY4MGFmYmQ4ZCIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.aSImFplbR08opL7ZIEDGWoGFXmUBEkiv1x1zv6OTw50",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0ODJmZTQ4YmQ4ZjE5ODJmZDY5YTA2NiIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.vE4IqaMyMaqyTE-GLXkH8V7LPYV4LW9-KMvFYDQA8Y4",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0ODJmZTQ4YmQ4ZjE5ODJmZDY5YTA2NiIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.vE4IqaMyMaqyTE-GLXkH8V7LPYV4LW9-KMvFYDQA8Y4",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0ODQwZWQ2NTZmMmM3YjJlNGNjOTQ5NyIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.ltZTIo_THPVJnd_a_NXucS7sEfZmoHfN58DIdWpcpgk",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0N2JhNzU0NWRlZTBhYTY4MGFmYmQ4ZCIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.aSImFplbR08opL7ZIEDGWoGFXmUBEkiv1x1zv6OTw50",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0ODQwZWQ3OWQxY2I1YjNiN2YwOGMzYSIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.g1WIZRBM5PZlIY0wWpUIJWCvfSA0toODX3_mphjG2Tg",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGEyYTVmMDM1MTIxZWYwMmVkOGE4MzQiLCJjb3Vyc2VJZCI6IjY0OGQ4N2QzYjk5NzZhN2VjYWM0MTYyMCIsImlhdCI6MTczNTk3ODUzOCwiZXhwIjoxNzY3NTM2MTM4fQ.u-jCKvCqlIpIA7x3esFjbdlGegHkjqghClP8ab2iKRE"
+    ],
+    
+    "userCart": [],
+    "address": {
+        "AddressLine1": "",
+        "AddressLine2": "",
+        "City": "",
+        "State": "",
+        "Pincode": ""
+    },
+    "orders": [],
+    "createdAt": {
+        "$date": {
+            "$numberLong": "1688380912015"
+        }
+    },
+    "updatedAt": {
+        "$date": {
+            "$numberLong": "1735978538294"
+        }
+    },
+    "__v": {
+        "$numberInt": "23"
+    }
+}
