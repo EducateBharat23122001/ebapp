@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { COLOR } from '../Constants';
 import {BACKEND_URL1} from "@env"
 
-const PdfBox = ({Url}) => {
+const PdfBox = ({pdfUrl}) => {
  
   const pdfuri = pdfUrl
   console.log(pdfuri)

@@ -40,13 +40,14 @@ const LoginScreen = ({ navigation }) => {
   };
 
   const handleLogin = async () => {
+    console.log(BACKEND_URL)
+
     if (!credentials.phoneNumber || !credentials.password) {
       toast.show("Please fill in all fields", { type: "warning" });
       return;
     }
 
     setIsLoading(true);
-    
     try {
       const response = await fetch(`${BACKEND_URL}/signin`, {
         method: "POST",

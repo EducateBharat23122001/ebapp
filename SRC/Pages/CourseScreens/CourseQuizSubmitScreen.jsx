@@ -9,7 +9,7 @@ const CourseQuizSubmitScreen = ({ route, navigation }) => {
     const percent = (score / total) * 100;
 
 
-    console.log(score, total);
+    console.log(route.params);
 
     return (
         <ScrollView contentContainerStyle={styles.container}>
