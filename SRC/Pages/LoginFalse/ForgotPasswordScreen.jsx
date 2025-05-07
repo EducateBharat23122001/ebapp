@@ -19,7 +19,7 @@ import { COLOR, windowHeight } from "../../Constants";
 
 const ForgotPasswordScreen = ({ navigation }) => {
   const toast = useToast();
-  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ const ForgotPasswordScreen = ({ navigation }) => {
   const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false);
 
   const handleResetPassword = () => {
-    if (phone === "" || newPassword === "" || confirmPassword === "") {
+    if (email === "" || newPassword === "" || confirmPassword === "") {
       toast.show("Please fill in all fields", { type: "warning" });
       return;
     }
@@ -37,7 +37,7 @@ const ForgotPasswordScreen = ({ navigation }) => {
     }
     setLoading(true);
     // Mock password reset request
-    navigation.navigate('CheckOtpForgotPassword', { phone, password: newPassword });
+    navigation.navigate('CheckOtpForgotPassword', { email, password: newPassword });
   };
 
   const togglePasswordVisibility = () => {
@@ -68,14 +68,13 @@ const ForgotPasswordScreen = ({ navigation }) => {
           {/* Form Section */}
           <View style={styles.formContainer}>
             <View style={styles.inputContainer}>
-              <Text style={styles.inputLabel}>Phone Number</Text>
+              <Text style={styles.inputLabel}>Email</Text>
               <TextInput
-                placeholder="Enter your phone number"
-                value={phone}
-                onChangeText={setPhone}
+                placeholder="Enter your email"
+                value={email}
+                onChangeText={setEmail}
                 style={styles.inputField}
                 placeholderTextColor={COLOR.col4}
-                keyboardType="phone-pad"
                 autoCapitalize="none"
               />
             </View>

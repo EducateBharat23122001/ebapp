@@ -18,7 +18,7 @@ import logo from '../../Assets/logo.png';
 
 const CheckOtpForgotPassword = ({ navigation, route }) => {
   const toast = useToast();
-  const { phone, password } = route.params;
+  const { email, password } = route.params;
   const [loading, setLoading] = useState(false);
   const [otp, setOtp] = useState("");
   const [correctOtp, setCorrectOtp] = useState(null);
@@ -36,7 +36,7 @@ const CheckOtpForgotPassword = ({ navigation, route }) => {
     fetch(BACKEND_URL + '/sendotp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone })
+      body: JSON.stringify({ email })
     })
     .then(response => response.json())
     .then(json => {
@@ -49,7 +49,7 @@ const CheckOtpForgotPassword = ({ navigation, route }) => {
   };
 
   const handleVerify = () => {
-    if (!password || !phone) {
+    if (!email || !password) {
       toast.show("Something went wrong", { type: "danger" });
       navigation.navigate('SignupScreen');
       return;
@@ -69,7 +69,7 @@ const CheckOtpForgotPassword = ({ navigation, route }) => {
     fetch(BACKEND_URL + '/resetpassword', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone, newpassword: password })
+      body: JSON.stringify({ email, newpassword: password })
     })
     .then(response => response.json())
     .then(json => {

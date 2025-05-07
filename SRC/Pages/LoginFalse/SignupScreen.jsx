@@ -61,12 +61,12 @@ const SignupScreen = ({ navigation }) => {
       const response = await fetch(`${BACKEND_URL}/checkuser`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone }),
+        body: JSON.stringify({ email }),
       });
 
       const data = await response.json();
 
-      if (data.message === "User does not exists with that phone") {
+      if (data.message === "User does not exists with that email") {
         navigation.navigate('CheckOtpSignup', { 
           email, 
           password, 
@@ -75,7 +75,7 @@ const SignupScreen = ({ navigation }) => {
           phone 
         });
       } else {
-        toast.show("This phone number is already registered", { 
+        toast.show("This user is already registered", { 
           type: "danger",
           placement: "bottom"
         });

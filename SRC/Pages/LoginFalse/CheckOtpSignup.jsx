@@ -9,7 +9,8 @@ import {
   ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
-  ScrollView
+  ScrollView,
+  Alert
 } from "react-native";
 import { useToast } from "react-native-toast-notifications";
 import { BACKEND_URL } from "@env";
@@ -36,10 +37,11 @@ const CheckOtpSignup = ({ navigation, route }) => {
     fetch(BACKEND_URL + '/sendotp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone })
+      body: JSON.stringify({ email })
     })
     .then(response => response.json())
     .then(json => {
+      Alert.alert("OTP SENT");
       setCorrectOtp(json.otp);
       setTimer(60); // reset timer on OTP send
     })
@@ -102,7 +104,7 @@ const CheckOtpSignup = ({ navigation, route }) => {
             <Image source={logo} style={styles.logo} />
             <Text style={styles.title}>Verify OTP</Text>
             <Text style={styles.subtitle}>
-              We've sent a verification code to {phone}
+              We've sent a verification code to {email}
             </Text>
           </View>
 

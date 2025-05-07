@@ -28,7 +28,7 @@ const LoginScreen = ({ navigation }) => {
   
   // State
   const [credentials, setCredentials] = useState({
-    phoneNumber: "",
+    email: "",
     password: ""
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -42,7 +42,7 @@ const LoginScreen = ({ navigation }) => {
   const handleLogin = async () => {
     console.log(BACKEND_URL)
 
-    if (!credentials.phoneNumber || !credentials.password) {
+    if (!credentials.email || !credentials.password) {
       toast.show("Please fill in all fields", { type: "warning" });
       return;
     }
@@ -53,7 +53,7 @@ const LoginScreen = ({ navigation }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          phone: credentials.phoneNumber,
+          email: credentials.email,
           password: credentials.password
         }),
       });
@@ -107,14 +107,13 @@ const LoginScreen = ({ navigation }) => {
           {/* Form Section */}
           <View style={styles.formContainer}>
             <View style={styles.inputContainer}>
-              <Text style={styles.inputLabel}>Phone Number</Text>
+              <Text style={styles.inputLabel}>Email</Text>
               <TextInput
-                placeholder="Enter your phone number"
-                value={credentials.phoneNumber}
-                onChangeText={(text) => handleInputChange('phoneNumber', text)}
+                placeholder="Enter your email"
+                value={credentials.email}
+                onChangeText={(text) => handleInputChange('email', text)}
                 style={styles.inputField}
                 placeholderTextColor={COLOR.col4}
-                keyboardType="phone-pad"
                 autoCapitalize="none"
               />
             </View>
